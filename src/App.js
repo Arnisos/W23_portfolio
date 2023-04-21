@@ -1,25 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import Resume from './Resume';
+import CoverLetter from './CoverLetter';
+import Experience from './Experience';
+import "./Experience.css"
+import "./Resume.css";
+import "./CoverLetter.css"
+import Capstone from './Capstone';
+import "./Capstone.css"
+import "./image.jpg"
+
 
 function App() {
+  
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="app">
+      <Resume />
+      <CoverLetter />
+      <Experience />
+      <Capstone />
     </div>
-  );
+  )
 }
 
 export default App;
